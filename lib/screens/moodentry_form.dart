@@ -150,6 +150,7 @@ class _MoodEntryFormPageState extends State<MoodEntryFormPage> {
                           }
                       }
                         showDialog(
+                          // ignore: use_build_context_synchronously
                           context: context,
                           builder: (context) {
                             return AlertDialog(
@@ -176,7 +177,7 @@ class _MoodEntryFormPageState extends State<MoodEntryFormPage> {
                             );
                           },
                         ); 
-                      }; null;
+                      } 
                     },
                     child: const Text(
                       "Save",
